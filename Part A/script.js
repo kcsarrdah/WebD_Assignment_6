@@ -28,11 +28,10 @@ $(document).ready(function() {
         alert('Email should be a northeastern email address.');
         return;
       }
-      
+      document.cookie = "username=" + encodeURIComponent($('#username').val());
       // If all validations pass, redirect to second page
       window.location.href = 'secondPage.html';
-      var username = $('#username').val()
-        $(secondPage.html).$('#username').text(username);
+      
     });
   });
   

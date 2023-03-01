@@ -1,8 +1,8 @@
 // Second Page JavaScript
 $(document).ready(function() {
     // Get the username from sessionStorage and display it in the appropriate element
-    var username = sessionStorage.getItem('username');
-    $('#username').text(username);
+    var username = decodeURIComponent(document.cookie.replace(/(?:(?:^|.*;\s*)username\s*\=\s*([^;]*).*$)|^.*$/, "$1"));
+  $('#username').text(username);
   
     // Add event listeners to the math operation buttons
     $('#add').click(calculate('+'));
