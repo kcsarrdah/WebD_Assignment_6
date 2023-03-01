@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="secondPageStyles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="secondPageScript.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Page
+    </title>
+</head>
+<body>
+    <!-- Second Page HTML -->
+<div>
+    <h2>Welcome, <span id="username"></span></h2>
+  
+    <label for="num1">Number 1:</label>
+    <input type="text" id="num1" name="num1" required>
+    <span id="num1-error" class="error"></span>
+  
+    <label for="num2">Number 2:</label>
+    <input type="text" id="num2" name="num2" required>
+    <span id="num2-error" class="error"></span>
+  
+    <br>
+  
+    <label for="result">Result:</label>
+    <input type="text" id="result" name="result" readonly>
+  
+    <br>
+  
+    <button id="add">Add</button>
+    <button id="subtract">Subtract</button>
+    <button id="multiply">Multiply</button>
+    <button id="divide">Divide</button>
+    <button id="LogOut">Log Out</button>
+  </div>
+  
+</body>
+</html>
