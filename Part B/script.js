@@ -56,3 +56,4 @@ stopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
   resetTimer();
 });
+//This stopwatch uses the setInterval function to update the time every 10 milliseconds, and clearInterval to stop the timer. It also uses async/await and Promises to prevent the timer from starting again if it's already running, and to make the code more readable.
